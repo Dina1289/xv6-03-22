@@ -8,9 +8,10 @@ RUN apt-get -qq update && \
     apt-get install -y --no-install-recommends --reinstall ca-certificates \
                     git \
 # put dependencies here by the same way as git
-                    
-                    
-                    
+               git \
+                    make \
+                    gcc-multilib \
+                    qemu-system \     
     &&git clone https://github.com/mit-pdos/xv6-public.git  xv6 \
     &&chmod +x xv6/*.pl \
 #    &&chmod +x xv6-11/*.pl \
