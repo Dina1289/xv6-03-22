@@ -8,7 +8,6 @@ RUN apt-get -qq update && \
     apt-get install -y --no-install-recommends --reinstall ca-certificates \
                     git \
 # put dependencies here by the same way as git
-               git \
                     make \
                     gcc-multilib \
                     qemu-system \     
